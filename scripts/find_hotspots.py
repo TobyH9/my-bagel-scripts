@@ -200,8 +200,8 @@ def compute_contact_map(
     contacts[np.isnan(dist)] = -1
     return cast(npt.NDArray[np.int64], contacts)
 
-def main(file: str, 
-         target_chain_id: str, 
+def main(file: str,
+         target_chain_id: str,
          receptor_chain_id: str,
          threshold: float) -> list[list[int]]:
 

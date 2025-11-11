@@ -12,7 +12,7 @@ def main(
     use_modal: bool = False,
     binder_sequence: str = None,
     optimization_params: dict = None,
-    output_dir: str = 'data/nipah-binder'
+    output_dir: str = 'data/nipah_binder'
 ):
     # PART 1: Define the target protein
     # Carbonic anhydrase 4, CAH4_HUMAN, Gene: CA4
@@ -30,21 +30,21 @@ def main(
 
     # Now define residues in the hotspot where you want to bind.
     residue_ids = [
-        [24, 25, 26], 
-        [47, 48, 49, 50, 51, 52], 
-        [113, 114, 115], 
-        [197, 198, 199], 
-        [209, 210, 211, 212], 
-        [212, 213, 214], 
-        [266, 267, 268], 
-        [295, 296, 297, 298, 299, 300, 301, 302], 
-        [312, 313, 314, 315, 316, 317], 
-        [337, 338, 339, 340, 341, 342, 343], 
-        [363, 364, 365], 
-        [365, 366, 367, 368, 369], 
-        [387, 388, 389], 
-        [389, 390, 391], 
-        [391, 392, 393, 394], 
+        [24, 25, 26],
+        [47, 48, 49, 50, 51, 52],
+        [113, 114, 115],
+        [197, 198, 199],
+        [209, 210, 211, 212],
+        [212, 213, 214],
+        [266, 267, 268],
+        [295, 296, 297, 298, 299, 300, 301, 302],
+        [312, 313, 314, 315, 316, 317],
+        [337, 338, 339, 340, 341, 342, 343],
+        [363, 364, 365],
+        [365, 366, 367, 368, 369],
+        [387, 388, 389],
+        [389, 390, 391],
+        [391, 392, 393, 394],
         [396, 397, 398]
         ]
     residue_ids = [item for sublist in residue_ids for item in sublist]
